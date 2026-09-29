@@ -1,0 +1,21 @@
+Método	URL	Permiso
+GET	http://localhost/yne-crud/api/v1/productos.php	Usuario autenticado -  CONSULTAR TODOS LOS PRODUCTOS
+GET	http://localhost/yne-crud/api/v1/productos.php?id=4	Usuario autenticado - CONSULTAR PRODUCTO POR ID
+POST	http://localhost/yne-crud/api/v1/productos.php	ADMIN o MODERADOR - CREAR PRODUCTO	
+PUT	http://localhost/yne-crud/api/v1/productos.php?id=4	ADMIN o MODERADOR - MODIFICAR PRODUCTOS	
+DELETE	http://localhost/yne-crud/api/v1/productos.php?id=4	Solo ADMIN	- ELIMINAR PRODUCTOS POR ID	
+POST	http://localhost/yne-crud/modules/auth/controller/LoginController.php?accion=login
+POST	http://localhost/yne-crud/modules/auth/controller/LoginController.php?accion=logout
+
+JSON	 [ crear, modificar ]
+{
+  "nombre": "Paracetamol",
+  "descripcion": "Tabletas de 500 mg",
+  "presentacion": "Caja con 20 tabletas",
+  "lote": "PAR-2026-001",
+  "cantidad": 100,
+  "precio": 45.50,
+  "fecha_caducidad": "2027-12-31",
+  "categoria": "Medicamentos",
+  "estatus": "Activo"
+}

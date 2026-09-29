@@ -1,0 +1,11 @@
+.descripcion-producto {
+    max-width: 16rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#tablaProductos th,
+#tablaProductos td {
+    vertical-align: middle;
+}

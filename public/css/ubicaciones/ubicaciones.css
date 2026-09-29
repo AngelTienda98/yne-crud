@@ -1,0 +1,11 @@
+#tablaUbicaciones th,
+#tablaUbicaciones td,
+#tablaMovimientos th,
+#tablaMovimientos td {
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#montacarguistas {
+    min-height: 6.5rem;
+}
